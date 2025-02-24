@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Notifications</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 100%;
+margin: auto;
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+.notification-card {
+padding: 15px;
+margin: 10px 0;
+border-radius: 5px;
+transition: transform 0.2s;
+}
+.notification-card:hover {
+transform: scale(1.02);
+}
+.notification-card.alert {
+background-color: #f8d7da;
+
+border-left: 5px solid #dc3545;
+}
+.notification-card.reminder {
+background-color: #fff3cd;
+border-left: 5px solid #ffc107;
+}
+.notification-card.achievement {
+background-color: #d4edda;
+border-left: 5px solid #28a745;
+}
+.notification-card.training {
+background-color: #cce5ff;
+border-left: 5px solid #007bff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Staff Notifications</h1>
+<!-- Alert Notification -->
+<div class="notification-card alert">
+<h3>Alert</h3>
+<p>Server maintenance scheduled for tonight at 11 PM.</p>
+</div>
+<!-- Reminder Notification -->
+<div class="notification-card reminder">
+<h3>Reminder</h3>
+<p>Submit your project reports by Friday.</p>
+</div>
+<!-- Achievement Notification -->
+<div class="notification-card achievement">
+<h3>Achievement</h3>
+<p>Congratulations to the Sales team for exceeding
+targets!</p>
+
+</div>
+<!-- Training Notification -->
+<div class="notification-card training">
+<h3>Training</h3>
+<p>New training session on teamwork scheduled for next
+Monday.</p>
+</div>
+</div>
+</body>
+</html>
